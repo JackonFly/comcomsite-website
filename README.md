@@ -1,24 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Dit is mijn eerste communicatie company website met Ruby on Rails.
 
-Things you may want to cover:
+Hallo, mijn naam is Jack van Raay. 
+Samen met AnneMarie zijn we eigenaar van deze communicatie company.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* We zullen steeds iet proberen en uploaden naar Git-Hub...
