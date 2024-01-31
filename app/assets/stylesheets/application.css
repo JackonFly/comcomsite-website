@@ -13,3 +13,730 @@
  *= require_tree .
  *= require_self
  */
+/*@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');*/
+/*--- Extra Bootstrap Column Padding --*/
+[class*="col-"] {
+  padding: 1rem;
+}
+
+/*--- Bootstrap Mobile Gutter Fix --*/
+.row, .container-fluid {
+  margin-left: 0px!important;
+  margin-right: 0px!important;
+}
+
+/*============= IMAGE SLIDER =============*/
+
+.carousel-item {
+	margin-top: 50px;
+	background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/*---Change Carousel Transition Speed --*/
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+  display: block;
+  transition: -webkit-transform 1.2s ease;
+  transition: transform 1.2s ease;
+  transition: transform 1.2s ease,-webkit-transform 1.2s ease;
+
+}
+.fixed-top {
+	
+}
+
+
+
+
+html {
+	overflow-x: hidden;
+}
+
+body {
+	background-color: #fff;
+	font: 1rem/1.5 'Open Sans', Arial, Helvetice Neue, sans-serif;
+	background-color: #f4f4f4;
+	/*		margin-top: 0;*/
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
+	/* Fix for webkit rendering */
+	-webkit-text-size-adjust: 100%;
+}
+
+h1 {
+	font-family: 'Open Sans', Arial, Helvetice Neue, sans-serif;
+	font-size: 2em/1.5;
+	font-weight: 400;
+}
+
+h2 {
+	font-family: 'Open Sans', Arial, Helvetice Neue, sans-serif;
+	font-size: 1.5em/1.5;
+	font-weight: 400;
+}
+
+h3 {
+	font-family: 'Open Sans', Arial, Helvetice Neue, sans-serif;
+	font-size: 1.125em/1.5;
+	letter-spacing: -0.005em;
+	word-spacing: -.01em;
+	font-weight: 400;
+}
+
+h4 h5 h6 {
+	font-family: 'Open Sans', Arial, Helvetice Neue, sans-serif;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	font-style: italic;
+}
+
+
+/* -- navbar --*/
+.navbar {
+	margin: 0;
+	padding: 5px;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: .8rem;
+	letter-spacing: .01rem;
+	border-bottom: 2px solid #CC3333;
+	background: rgb(255, 255, 255, 1) !important;
+}
+
+.navbar-brand img {
+	height: 2.5rem;
+}
+
+.navbar-nav li {
+	padding-right: .7rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: #005b99;
+	padding-top: .8rem;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #CC3333;
+}
+
+/* Slider*/
+.carousel-item {
+	height: 55vh;
+}
+
+.carousel-caption {
+	padding-bottom: 3%;
+	text-transform: uppercase;
+}
+
+.carousel-caption h1 {
+	font-size: 2.5rem;
+	font-weight: 900;
+	letter-spacing: .3rem;
+	text-shadow: .1rem .1rem #555;
+
+}
+
+.carousel-caption h3 {
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
+/* ------ Welcome & Slogna ------ */
+#welcome {
+	color: #777;
+	padding-top: 20px;
+	background-color: #8080;
+}
+
+.welcome {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: .75em;
+	color: #777;
+	margin: 0px 0;
+}
+
+.welcome h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 2rem;
+	margin: 10px 0;
+	/*	padding-top: 10px;*/
+	color: #005b99;
+}
+
+/*-- about section */
+#about {
+	width: 100%;
+	background-color: #fff;
+	margin-top: 1rem;
+	padding-top: 2rem;
+}
+
+.about-left img {
+	width: 100%;
+	margin-left: 20px;
+	/*		margin: 0px 60px;*/
+}
+
+.about-right h2 {
+	font-size: 18px;
+	/*	margin-left: 15%;*/
+	font-weight: 700;
+	color: #005b99;
+}
+
+.about-right p {
+	font-size: 14px;
+	/*	margin-left: 15%;*/
+	color: #777;
+}
+
+.header {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+/* style voor facilities Cards */
+.narrow {
+	width: 75%;
+	margin: 0 auto;
+	padding: .18rem;
+}
+
+#facilities {
+	color: #777;
+	background-color: #8080;
+	padding-top: 80px;
+}
+
+#facilities h1 {
+	color: #666;
+	font-weight: 700;
+	font-size: 34px;
+	padding-bottom: 5px;
+}
+
+.title {
+	text-align: center;
+	padding: 25px 0px;
+}
+
+.title p {
+	color: #777;
+	font-size: 17px;
+}
+
+.card-body {
+	box-shadow: 0 0 20px 7px rgb(0, 0, 0, 0.2)
+}
+
+.card {
+	margin: 0px 10px;
+	background-color: #f4f4f4;
+}
+
+.card-title {
+	color: #CC3333;
+	font-size: 1.2em;
+	font-weight: 700;
+	letter-spacing: -.3px;
+	word-spacing: -2px;
+}
+
+.card-body a {
+	text-decoration: none;
+	font-size: 15px;
+	margin-top: auto;
+	font-weight: 600;
+}
+
+.card-text {
+	font-size: 15px;
+	color: #777;
+	/*	color: black;*/
+}
+
+.integrity {
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+}
+
+/* End style voor facilities Cards */
+
+/*============= COURSE SECTION =============*/
+
+.narrow {
+	width: 75%;
+	margin: 0 auto;
+	padding: .18rem;
+}
+
+.btn-md {
+	border-width: medium;
+	border-radius: 0;
+	padding: .6rem 1.1rem;
+	text-transform: uppercase;
+	margin: 1rem;
+}
+
+.btn-secondary {
+	border-width: medium;
+	border-radius: 0;
+	padding: .6rem 1.2rem;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	margin: 1rem;
+	border-color: #1EBBA3;
+	background-color: #1EBBA3;
+	color: white;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+	border-color: #CC3333;
+	background-color: #CC3333;
+	color: white;
+}
+
+.jumbotron {
+	border-radius: 0;
+	padding: 0 0 0 .5rem;
+	margin-bottom: 0;
+	background-color: #f4f4f4;
+}
+
+h3.heading {
+	font-size: 1.125em;
+	font-weight: 700;
+	color: #005b99;
+	padding-top: .2rem;
+}
+
+.heading-underline {
+	width: 13rem;
+	height: .125rem;
+	background-color: #CC3333;
+	margin: 0 auto;
+}
+
+/*--- Portfolio ---*/
+.portfolio,
+h4 {
+	padding: 0.5em 0 0.5em;
+	font-size: 1.1em;
+	font-weight: 700;
+	color: #808080;
+}
+
+.portfolio img {
+	max-width: 90%;
+	transition: transform 0.22s ease-in;
+}
+
+.row.nopadding [class=col-] {
+	padding: 0px;
+}
+
+.portfolio img:hover {
+	transform: scale(1.08);
+	cursor: zoom-in;
+}
+
+.portfolio {
+	overflow: hidden;
+}
+
+/* Start CTA section */
+
+#cta {
+	background-color: #fff;
+	color: #777;
+	padding: 3rem;
+}
+
+.cta {
+	font-weight: 700;
+	font-size: .75em;
+	color: #777;
+}
+
+.cta h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 2.8em;
+	margin: 10px 0;
+	padding-top: 10px;
+	color: #005b99;
+}
+
+/* End CTA section */
+
+
+
+/* contact-section */
+#contact {
+	color: #777;
+	padding: 0;
+	border-bottom: 3px solid #CC3333;
+}
+
+.contact-section {
+	background: #444;
+	margin-bottom: 0;
+	/*	padding: 1em 0 0;*/
+
+}
+
+.contact-grid a {
+	color: #fff;
+	font-size: 15px;
+}
+
+.contact-grid h5 {
+	color: #fff;
+	font-weight: 700;
+}
+
+.contact-grid h6 {
+	margin: 0;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.contact-grid p {
+	font-size: 14px;
+	/*	  color: #999;*/
+	color: #f1f1f1;
+	padding: 0.5em 0 0.2em 0;
+	line-height: 1.5em;
+}
+
+.contact-grid a.more {
+	text-decoration: none;
+	text-transform: capitalize;
+	color: white;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.contact-grid a:hover {
+	text-decoration: none;
+	color: red;
+}
+
+.img-grid1 {
+	float: left;
+	width: 49%;
+	margin-right: 2%;
+}
+
+.img-grid2 {
+	float: left;
+	width: 49%;
+}
+
+.img-grid1 img {
+	width: 100%;
+}
+
+.img-grid2 img {
+	width: 100%;
+}
+
+.cont {
+	padding-top: 0.5rem;
+}
+
+.contact-leftgrid {
+	margin-bottom: 0.5em;
+}
+
+
+hr {
+	border-bottom: 1px solid #40474e;
+}
+
+.about-us {
+	color: #777;
+	margin-top: 2em;
+	padding-top: 5em;
+	padding-bottom: 2em;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+
+/*---End  contact section ---*/
+
+hr.light {
+	border-top: 1px solid #d5d5d5;
+	/*	margin-top: .8rem;*/
+	margin-bottom: 1rem;
+}
+
+/*  footer section */
+.footer-section {
+	background: #283645;
+}
+
+.footer-left {
+	float: left;
+	margin-top: 26px;
+
+}
+
+.footer-left p {
+	font-size: 0.7rem;
+	color: #222;
+}
+
+.footer-left p a {
+	font-size: 1em;
+	font-weight: 700;
+	color: #005b99;
+	margin-left: 5px;
+}
+
+.footer-left p a:hover {
+	text-decoration: none;
+	color: red;
+}
+
+/*  end footer*/
+.top-footer {
+	font-size: 0.75rem;
+	font-weight: 400;
+}
+
+.top-footer img {
+	height: 1.6rem;
+	/*	margin: .5rem 0;*/
+}
+
+footer a {
+	color: #d5d5d5;
+}
+
+hr.light-100 {
+	border-top: 1px solid #d5d5d5;
+	width: 100%;
+	/*	margin-top: .8rem;*/
+	/*	margin-bottom: 1rem;*/
+}
+
+.top-footer {
+	background-color: #40474e;
+	color: #d5d5d5;
+	padding: 2rem;
+}
+
+.bottom-footer {
+	background-color: #fff;
+}
+
+hr.socket {
+	border-top: .2rem solid #666b71;
+	width: 100%;
+}
+
+#toTop {
+	display: none;
+	text-decoration: none;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	overflow: hidden;
+	width: 48px;
+	height: 48px;
+	border: none;
+	text-indent: 100%;
+	background: url("../images/to-top2.png") no-repeat 0px 0px;
+}
+
+/*--- Media Querys --*/
+@media (max-width:980px) {
+
+	.navbar-brand img {
+		height: 2rem;
+
+	}
+
+	.navbar-collapse li {
+		padding-right: .1rem;
+		font-size: 0.7rem;
+		text-align: center;
+	}
+}
+
+
+@media (max-width:780px) {
+
+	p {
+		font: 0.75em/1.5 'Open Sans', Arial, Helvetice Neue, sans-serif;
+	}
+
+	.navbar-brand img {
+		height: 2.4rem;
+	}
+
+	.navbar-collapse li {
+		padding-right: .01rem;
+		font-size: 0.65rem;
+		text-align: center;
+	}
+
+	.carousel-item {
+		margin-top: 7%;
+	}
+
+	/*
+	.carousel-caption h1 {
+		font-size: rem;
+		letter-spacing: .15rem;
+		padding-bottom: .5rem;
+	}
+*/
+
+	.carousel-caption h3 {
+		font-size: 1.2rem;
+		padding-bottom: 1.2rem;
+	}
+
+	.btn-lg {
+		font-size: 1rem;
+	}
+
+	.narrow h1 {
+		font-size: 1.5rem;
+	}
+
+	p.lead {
+		font-size: 1rem;
+	}
+
+	.welcome h3 {
+		font-size: 1.4rem;
+	}
+
+	.welcome p {
+		font-size: 1.2em;
+		line-height: 1.34em;
+	}
+
+	.narrow {
+		width: 90%;
+	}
+
+	.cta p {
+		font-size: .8rem;
+		font-weight: 400;
+	}
+
+	.cta h3 {
+		font-size: 1.6rem;
+	}
+
+	#about {
+		width: 100%;
+	}
+
+	.about-left img {
+		width: 75%;
+		margin-left: 35px;
+	}
+
+	/*
+	.about-right img {
+		width: 75%;
+		margin: 0px 60px;
+	}
+*/
+}
+
+@media (max-width:575px) {
+
+	p {
+		font: 0.5em/1.5 'Open Sans', Arial, Helvetice Neue, sans-serif;
+	}
+
+	.navbar-brand img {
+		height: 1.5rem;
+		margin: 0.25rem 0.75rem;
+	}
+
+	.navbar-toggler {
+		margin: 1.35rem 1.5rem;
+		font-size: .9rem;
+		line-height: 1;
+	}
+
+
+	.navbar-collapse li {
+		padding-right: .01rem;
+		font-size: 0.55rem;
+		text-align: center;
+	}
+
+	.carousel-caption h1 {
+		font-size: .9rem;
+		letter-spacing: .15rem;
+		padding-bottom: .5rem;
+	}
+
+	.carousel-caption h3 {
+		font-size: 1.2rem;
+		padding-bottom: 1.2rem;
+	}
+
+	.welcome h3 {
+		font-size: 1.05rem;
+		word-spacing: -0.12rem;
+	}
+
+	.welcome P {
+		font-size: 0.8rem;
+	}
+
+	.cta h3 {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 700;
+		font-size: 1.3rem;
+		margin: 10px 0;
+		padding-top: 10px;
+		color: #005b99;
+	}
+
+	.btn-sm {
+		font-size: 0.7rem;
+	}
+}
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
